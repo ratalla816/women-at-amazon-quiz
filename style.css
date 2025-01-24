@@ -5,16 +5,25 @@
     h1{
         text-align: center;
         flex-basis: auto;
-        padding: 20px;
+        padding: 10px;
         padding-top: 0px;
         color: #262f36;
         font-family: Trebuchet MS, sans-serif;
      }
+
+     h2{
+        text-align: center;
+        flex-basis: auto;
+        padding: 0px;
+        padding-top: 20px;
+        color: #262f36;
+       font-family: Trebuchet MS, sans-serif;
+    }    
      
     h3{
          text-align: center;
          flex-basis: auto;
-         padding: 20px;
+         padding: 5px;
          padding-top: 0px;
          color: #262f36;
         font-family: Trebuchet MS, sans-serif;

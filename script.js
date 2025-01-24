@@ -23,64 +23,64 @@ var highscoreDisplayScore = document.getElementById("highscore-score");
 
 // Question Array
 var quizQuestions = [{
-    question: "To select a class attribute, which prefix needs to be added to the class name?",
-    answerA: "()",
-    answerB: "''",
-    answerC: "!",
-    answerD: ".",
+    question: "In 1869, which territory was the first place in America to give women the right to vote?",
+    answerA: "Puerto Rico",
+    answerB: "New Mexico",
+    answerC: "Utah",
+    answerD: "Wyoming",
     correctAnswer: "d"
 },
 {
-    question: "Which is an anonymous function?",
-    answerA: "addEventListener",
-    answerB: "alert()",
-    answerC: "function()",
-    answerD: "Trolling social media using a fictitious name",
-    correctAnswer: "b"
-},
-{
-    question: "What method is used to append an item to a list?",
-    answerA: "appendItem()",
-    answerB: "appendChild()",
-    answerC: "li",
-    answerD: "textContent",
-    correctAnswer: "b"
-},
-{
-    question: "Which Web API does JavaScript have access to through the browser?",
-    answerA: "Webkit",
-    answerB: "Chrome DevTools",
-    answerC: "DOM",
-    answerD: "ERP",
+    question: "Who was the first female United States governor?",
+    answerA: "Sarah Palin",
+    answerB: "Kathie Lee Gifford",
+    answerC: "Nellie Tayloe Ross",
+    answerD: "Elizabeth Cady Stanton",
     correctAnswer: "c"
 },
-{   question: "Which statement can be read as 'on a button click, create a task'?",
-    answerA: "('click', createTaskHandler)",
-    answerB: "On click",
-    answerC: "createTaskHandler = function",
-    answerD: "buttonEl",
+{
+    question: "Congress designated March as Women’s History Month in what year?",
+    answerA: "1991",
+    answerB: "2016",
+    answerC: "1987",
+    answerD: "1953",
+    correctAnswer: "c"
+},
+{
+    question: "In 1974 the Equal Credit Opportunity Act (ECOA) allowed women to obtain their own _______?",
+    answerA: "paychecks",
+    answerB: "credit reports",
+    answerC: "drivers licenses",
+    answerD: "credit cards",
+    correctAnswer: "d"
+},
+{   question: "Which civil rights activist earned the nickname 'the mother of the freedom movement'?",
+    answerA: "Rosa Parks",
+    answerB: "Patty Hearst",
+    answerC: "Sojourner Truth",
+    answerD: "Gloria Steinem",
     correctAnswer: "a"
 },
 {
-    question: "In context of an application programming interface, What does DOM stand for?",
-    answerA: "Distributed Output Management",
-    answerB: "Declared Objective Material",
-    answerC: "Document Object Model",
-    answerD: "Dissolved Organic Matter",
+    question: "Who was the first woman in space?",
+    answerA: "Sally Ride",
+    answerB: "Lt. Nyota Uhura",
+    answerC: "Valentina Tereshkova",
+    answerD: "Carrie Fisher",
     correctAnswer: "c"
 },
-{   question: "How can default browser behavior be overridden?",
-    answerA: "Ctrl + Alt + Del",
-    answerB: "event.preventDefault()",
-    answerC: "git checkout -b",
-    answerD: "querySelector()",
-    correctAnswer: "b"
+{   question: "Which pioneer social worker founded the Hull House and won the Nobel Peace Prize?",
+    answerA: "Eleanor Roosevelt",
+    answerB: "Lady Bird Johnson",
+    answerC: "Eleanor Summerfield",
+    answerD: "Jane Addams",
+    correctAnswer: "d"
 },
-{    question: "What method can web developers use to inconspicuously test code?",
-    answerA: "jQuery",
-    answerB: "console.log",
-    answerC: ".click(function()",
-    answerD: "AJAX",
+{   question: "Who was the first American woman to win a major party’s nomination for president?",
+    answerA: "Victoria Woodhull",
+    answerB: "Hillary Clinton",
+    answerC: "Susan B. Anthony",
+    answerD: "Kamala Harris",
     correctAnswer: "b"
 },
 ];
@@ -119,7 +119,7 @@ function startQuiz() {
 
     //Timer function subtracts elapsed time from 90 second global variable 
     timerInterval = setInterval(function () {
-        // countdown sequence that subracts elapsed time in 1000ms increments
+        // countdown sequence that subtracts elapsed time in 1000ms increments
         renderTimer--;
         gameTimer.textContent = "Time remaining: " + renderTimer;
 
@@ -234,12 +234,12 @@ function verifyAnswer(answer) {
 
     if (answer === correct && currentQuestionIndex !== finalQuestionIndex) {
         score++;
-        alert("Solid work!");
+        alert("You're so smart!");
         currentQuestionIndex++;
         pullQuizQuestion();
         // dialog box indicates that the answer is correct.
     } else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex) {
-        alert("Study harder!")
+        alert("Did you pick the wrong answer on purpose?")
         currentQuestionIndex++;
         renderTimer -= 10;
         pullQuizQuestion();
