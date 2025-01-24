@@ -50,7 +50,7 @@ so that players can compare their results with each other.
 ## Deployment
 
 Deployed Application Link:
-https://ratalla816.github.io/TBD/
+https://ratalla816.github.io/women-at-amazon-quiz/
 
 ## Screenshot
 
