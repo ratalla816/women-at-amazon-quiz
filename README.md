@@ -75,4 +75,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Contact
 Holler at me! <a href="mailto:robiatal@amazon.com">robiatal@amazon.com</a>
 <br>
-![screenshot](./assets/tux.JPG)
+![contact](./assets/tux.jpg)
